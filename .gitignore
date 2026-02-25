@@ -2,3 +2,5 @@
 /node_module
 # ignore file test.html
 /test.html
+# ignore all node_module folder from the child directory
+**/node_modules
