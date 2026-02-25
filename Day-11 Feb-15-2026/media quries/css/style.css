@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: grid;
+}
+
+.main > div {
+    border: 1px solid #ccc;  
+    border-radius: 12px;      
+}
+
+@media only screen and (max-width: 768px) {
+    .main {
+        padding: 12px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 12px;
+    }
+
+    .main > div {
+        padding: 12px;
+        background: lightblue;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+    .main {
+        padding: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .main > div {
+        padding: 20px;
+        background: lightgoldenrodyellow;
+    }
+}
+
+@media only screen and (min-width: 1201px) {
+    .main {
+        padding: 28px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 28px;
+    }
+
+    .main > div {
+        padding: 28px;
+        background: lightgrey;
+    }
+}

@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bd {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(-15deg, rgba(255, 0, 0, 0.2) 0%, rgb(255, 255, 255) 60%, rgb(55, 255, 55) 100%);
+    float: left;
+    /* opacity: 1; */
+}
+
+.dhk {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(ellipse farthest-side at top right, #fff, #8ce, #000);
+    float: left;
+}
+
+.dhanmondi {
+    width: 300px;
+    height: 300px;
+    background: conic-gradient(from 90deg at center, yellow, red, yellow);
+    float: left;
+}
+
+section {
+    width: 300px;
+    height: 300px;
+    float: left;
+    background: gray;
+}
+
+section div {
+    border: 2px solid #000;
+    padding: 20px;
+}
+
+section div > div {
+    width: 50%;
+}
+
+section > div > div + p {
+    color: #0f0;
+}
+
+section > div > div ~ p {
+    font-size: 22px;
+}
+
+section > div > div ~ p:hover {
+    color: #00f;
+}
+
+button:active {
+    background: #f00;
+}
+
+input[type="text"]:focus {
+    outline: 2px solid #00f;
+}
+
+/*
+first-child, last-child, nth-child, only-child
+*/
+
+.demo {
+    float: left;
+}
+
+.demo::before {
+    content: "Hello ";
+}
+
+.demo::after {
+    content: ".";
+}

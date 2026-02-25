@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f2f2f2;
+}
+
+
+.product-container{
+    width:1200px;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:20px;
+}
+
+/* CARD */
+.product-card{
+    background:white;
+    border-radius:10px;
+    overflow: visible;
+    position:relative;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+
+/* IMAGE AREA */
+.img-box{
+    height:220px;
+    background: linear-gradient(135deg, #f6c07a 50%, #f2f2f2 50%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.img-box img{
+    width:90%;
+}
+
+/* RIBBON */
+.ribbon{
+  position: absolute;
+  top: 20px;
+  right: -56px;
+  background: #007bff;
+  color: white;
+  padding: 8px 40px;
+  font-size: 14px;
+  transform: rotate(45deg);
+  clip-path: polygon(6% 100%, 25% 0, 85% 0, 100% 100%);
+  text-align: center;
+ 
+  
+  
+
+  z-index: 10;
+}
+.dis-left{
+width: 25px;
+height: 15px;
+background: #045bb7;
+position: absolute;
+right: 95px;
+top: -14px;
+}
+.dis-right{
+width: 15px;
+height: 14px;
+background: #0356ae;
+position: absolute;
+right: -14px;
+top: 105px;
+}
+
+/* TEXT */
+h3{
+    padding:15px 15px 5px;
+    animation: colorblink 1.5s infinite;
+}
+
+
+.price{
+    padding:0 15px;
+    font-weight:bold;
+}
+
+
+.blink-color {
+  animation: colorChange 1s infinite;
+}
+.price .old{
+    color:green;
+    text-decoration:line-through;
+    margin-right:5px;
+}
+
+.desc{
+    padding:10px 15px;
+    color:#666;
+    font-size:14px;
+}
+
+/* BUTTON */
+button{
+    margin:15px;
+    width:calc(100% - 30px);
+    padding:10px;
+    background:#333;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:black;
+}
+@keyframes colorChange {
+  0% {
+    color: blue;
+  }
+  50% {
+    color: green;
+  }
+  100% {
+    color: blue;
+  }
+}
+
+.blink-color {
+  animation: colorChange 1s infinite;
+}
+

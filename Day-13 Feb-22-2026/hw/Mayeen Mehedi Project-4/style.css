@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.rocket{
+    width: 100%;
+    height: 100vh;
+    background: url("./images/moon.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.r1{
+    height: 320px;
+    position: absolute;
+    bottom: 100px;
+    left: 200px;
+    animation: Rocket 5s linear infinite;
+    animation-delay: 1.5s;
+    animation-duration: 5s;
+}
+@keyframes Rocket {
+    0% {
+        bottom: -50%;
+    }
+    20% {
+        bottom: 100px;
+    }
+    50% {
+        bottom: 100px;
+    }
+    100% {
+        bottom: 100%;
+    }
+}

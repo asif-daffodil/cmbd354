@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.h1 {
+    color: blue; 
+    background-color: lightblue; 
+    width: max-content;
+    padding: 10px; 
+    margin: 10px;
+}
+
+.a {
+    color: lightpink;
+    background: darkred;
+    padding: 10px;
+    margin: 10px auto;
+    width: 300px;
+}
+
+.b {
+    display: inline-block;
+    color: lightpink;
+    background: darkred;
+    padding: 10px;
+    margin: 10px auto;
+    width: 300px;
+    text-align: center;
+}
+
+/* 
+display: block;
+display: inline-block;
+display: inline;
+display: none;
+display: flex;
+display: grid;
+display: table;
+display: table-row;
+display: table-cell;
+display: list-item;
+display: flex-inline;
+display: inline-table;
+display: run-in;
+*/
+
+.mainDiv {
+    display: table;
+}
+
+.mainDiv > div {
+    display: table-row;
+}
+
+.mainDiv > div > div {
+    display: table-cell;
+    padding: 10px;
+}
+
+.parent {
+    width: 200px;
+    height: 200px;
+    background: limegreen;
+}
+
+.parent + div {
+    margin-bottom: 1200px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 165, 0, 0.6);
+    position: relative;
+    top: -100px;
+    left: 100px;
+    border: 1px solid black;
+    z-index: 10;
+}
+
+.parent + div > div {
+    width: 200px;
+    height: 200px;
+    background: limegreen;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: -10;
+}
+
+.f {
+    width: 30px;
+    height: 30px;
+    background: purple;
+    border-radius: 50%;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+.bd {
+    width: max-content;
+    height: 300px;
+    border: 1px solid black;
+}
+.dhaka {
+    width: 300px;
+    height: 30px;
+    background: orange;
+    position: sticky;
+    top: 0;
+}
+
+/* 
+position: static;
+position: relative;
+position: absolute;
+position: fixed;
+position: sticky;
+*/
+
+.t {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background: teal;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.div1 {
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+}
+
+.div1:hover {
+    /* transform: translateX(20px); */
+    /* transform: translateY(20px); */
+    /* transform: translateX(20px) translateY(20px); */
+    transform: translate(20px, 20px);
+}
+
+.div2:hover {
+    /* transform: scaleX(120%); */
+    /* transform: scaleY(120%); */
+    /* transform: scale(120%); */
+    transform: scale(0.8);
+}
+
+.div3:hover {
+    /* transform: skewX(25deg); */
+    /* transform: skewY(25deg); */
+    /* transform: skewX(25deg) skewY(25deg); */
+    transform: skew(25deg, 25deg);
+}
+
+.div4:hover {
+    /* transform: rotateX(180deg); */
+    /* transform: rotateY(180deg); */
+    /* transform: rotateZ(180deg); */
+    transform: rotate(180deg);
+}
+
+.div5:hover {
+    transform: translate(-20px, -20px) scale(1.2) skew(-25deg, -25deg) rotate(-180deg);
+}
